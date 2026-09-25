@@ -3,448 +3,214 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sujin Park | Hardware Security Researcher</title>
+  <title>Sujin Park</title>
   <meta
     name="description"
-    content="Sujin Park is a Ph.D. student at Korea University researching physical side-channel analysis, countermeasures, and secure AI hardware."
+    content="Sujin Park is a Ph.D. student at Korea University researching side-channel analysis and hardware security."
   />
-  <meta name="theme-color" content="#8f1d35" />
+  <meta name="theme-color" content="#222222" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sujin Park | Hardware Security Researcher" />
+  <meta property="og:title" content="Sujin Park" />
   <meta
     property="og:description"
-    content="Research in physical side-channel analysis, countermeasures, and secure AI hardware."
+    content="Ph.D. student at Korea University researching side-channel analysis and hardware security."
   />
   <meta property="og:url" content="https://clapjean.github.io/" />
   <meta property="og:image" content="https://clapjean.github.io/images/sujinpark.jpg" />
   <link rel="canonical" href="https://clapjean.github.io/" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
-  <noscript>
-    <style>
-      @media (max-width: 980px) {
-        .menu-button { display: none; }
-        .nav { position: static; display: flex; visibility: visible; overflow-x: auto; opacity: 1; transform: none; box-shadow: none; }
-      }
-    </style>
-  </noscript>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#about" aria-label="Sujin Park, home">
-        <span class="brand-mark" aria-hidden="true">SP</span>
-        <span class="brand-name">Sujin Park</span>
-      </a>
+  <nav class="navbar" aria-label="Primary navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#awards">Awards</a></li>
+    </ul>
+  </nav>
 
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="sr-only">Toggle navigation</span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </button>
+  <div class="container">
+    <aside class="sidebar">
+      <img
+        class="profile"
+        src="images/sujinpark.jpg"
+        alt="Sujin Park"
+        width="180"
+        height="240"
+      />
 
-      <nav class="nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#background">Background</a>
-        <a href="#awards">Awards</a>
-      </nav>
-    </div>
-  </header>
+      <h1>Sujin Park</h1>
+      <p class="position">Ph.D. Student</p>
+      <p>
+        School of Cybersecurity<br />
+        Korea University<br />
+        Seoul, Republic of Korea
+      </p>
 
-  <main id="main-content">
-    <section class="hero" id="about" data-section>
-      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
-      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+      <ul class="contact">
+        <li><a href="mailto:lemontrees33@korea.ac.kr">Email</a></li>
+        <li><a href="#publications">Publications</a></li>
+      </ul>
+    </aside>
 
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span></span> Ph.D. Student · Hardware Security</p>
-          <h1>Sujin <em>Park</em></h1>
-          <p class="hero-role">School of Cybersecurity, Korea University</p>
-          <p class="hero-intro">
-            I study how physical leakage reveals the inner workings of secure systems—and how to
-            build practical defenses. My research focuses on electromagnetic and power side-channel
-            analysis, hardware security, and secure on-device deep learning.
-          </p>
+    <main class="content" id="main-content">
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am a Ph.D. student in the School of Cybersecurity at Korea University,
+          advised by Prof. HeeSeok Kim and Prof. Seokhie Hong. My research interests
+          include side-channel attacks and countermeasures, hardware security, and
+          secure on-device deep learning.
+        </p>
+      </section>
 
-          <div class="hero-actions">
-            <a class="button button-primary" href="mailto:lemontrees33@korea.ac.kr">
-              <svg aria-hidden="true" viewBox="0 0 24 24">
-                <path d="M3 5h18v14H3V5Zm2 2v.5l7 5.25 7-5.25V7H5Zm14 10v-7l-7 5.25L5 10v7h14Z" />
-              </svg>
-              Email me
-            </a>
-            <a class="button button-secondary" href="#publications">View publications <span aria-hidden="true">↓</span></a>
-          </div>
-
-          <dl class="hero-details">
-            <div>
-              <dt>Based in</dt>
-              <dd>Seoul, Republic of Korea</dd>
-            </div>
-            <div>
-              <dt>Research areas</dt>
-              <dd>Side-Channel Analysis · Hardware Security</dd>
-            </div>
-          </dl>
-        </div>
-
-        <div class="portrait-column">
-          <div class="portrait-frame">
-            <div class="portrait-accent" aria-hidden="true"></div>
-            <img
-              class="profile-photo"
-              src="images/sujinpark.jpg"
-              alt="Portrait of Sujin Park"
-              width="750"
-              height="1000"
-              fetchpriority="high"
-            />
-          </div>
-          <p class="portrait-caption">
-            <span>Graduate Research Assistant</span>
-            Korea University
-          </p>
-        </div>
-      </div>
-
-      <div class="container focus-strip" aria-label="Research focus">
-        <span>Research focus</span>
-        <ul>
-          <li>EM Leakage</li>
-          <li>Countermeasures</li>
-          <li>AI Accelerators</li>
-          <li>Reverse Engineering</li>
+      <section id="news">
+        <h2>News</h2>
+        <ul class="news-list">
+          <li>
+            <span class="date">2026</span>
+            <span>Our paper on electromagnetic side-channel monitoring of multicore architectures was accepted to <strong>ACM/IEEE DAC 2026</strong>.</span>
+          </li>
+          <li>
+            <span class="date">2025</span>
+            <span><strong>ProbeShooter</strong> was published at ACM ASIACCS 2025.</span>
+          </li>
+          <li>
+            <span class="date">2025</span>
+            <span>Received an Excellence Award at the KIISC Winter Conference.</span>
+          </li>
+          <li>
+            <span class="date">2024</span>
+            <span>Received an Excellence Award at the Cryptographic Analysis Contest.</span>
+          </li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <section class="section news-section" id="news" data-section>
-      <div class="container section-grid">
-        <div class="section-intro">
-          <p class="section-kicker">Recent updates</p>
-          <h2>News</h2>
-          <p>Selected research and award highlights.</p>
+      <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Side-channel attacks and countermeasures</li>
+          <li>Hardware security</li>
+          <li>Secure on-device deep learning</li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+
+        <div class="entry">
+          <p>
+            <strong>Ph.D. Student in Cybersecurity</strong><br />
+            School of Cybersecurity, Korea University, Seoul, Republic of Korea<br />
+            Sep. 2024 – Present<br />
+            Advisors: Prof. HeeSeok Kim and Prof. Seokhie Hong
+          </p>
         </div>
 
-        <ol class="news-list">
+        <div class="entry">
+          <p>
+            <strong>M.S. in Cybersecurity</strong><br />
+            Korea University, Seoul, Republic of Korea<br />
+            Mar. 2023 – Aug. 2024<br />
+            Thesis: Countermeasures against Side-Channel Analysis in Deep Learning with
+            Single-Precision Floating-Point Arithmetic<br />
+            Advisors: Prof. HeeSeok Kim and Prof. Seokhie Hong
+          </p>
+        </div>
+
+        <div class="entry">
+          <p>
+            <strong>B.S. in AI Cyber Security</strong><br />
+            Korea University, Seoul, Republic of Korea<br />
+            Mar. 2017 – Feb. 2023<br />
+            Advisor: Prof. HeeSeok Kim
+          </p>
+        </div>
+
+        <h3>Experience</h3>
+        <ul>
           <li>
-            <time datetime="2026">2026</time>
-            <div>
-              <span class="news-type">Publication</span>
-              <p>
-                Our paper on electromagnetic side-channel monitoring of multicore architectures was
-                accepted to <strong>ACM/IEEE DAC 2026</strong>.
-              </p>
-            </div>
+            <strong>Science Technology Security Centre Intern</strong>, Korea Institute of
+            Science and Technology Information (KISTI), Dec. 2021 – Feb. 2022
           </li>
           <li>
-            <time datetime="2025">2025</time>
-            <div>
-              <span class="news-type">Publication</span>
-              <p><strong>ProbeShooter</strong> was published at ACM ASIACCS 2025.</p>
-            </div>
+            <strong>National Cryptography Expert Training Program (NACET-9)</strong>, 2023
+          </li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <p class="note"><strong>Sujin Park</strong> is highlighted in the author lists.</p>
+
+        <h3>International Journals &amp; Conferences</h3>
+        <ol class="publication-list">
+          <li>
+            <span class="paper-title">Exploiting Per-Core Leakage: Electromagnetic Side-Channel Monitoring of Multicore Architectures</span><br />
+            Daehyeon Bae, <strong>Sujin Park</strong>, Insup Lee, Young-Giu Jung, Kyeongsik Lee,
+            HeeSeok Kim, and Seokhie Hong<br />
+            <em>ACM/IEEE Design Automation Conference (DAC)</em>, 2026.
           </li>
           <li>
-            <time datetime="2025">2025</time>
-            <div>
-              <span class="news-type">Award</span>
-              <p>Received an Excellence Award at the KIISC Winter Conference.</p>
-            </div>
+            <span class="paper-title">ProbeShooter: A New Practical Approach for Probe Aiming</span><br />
+            Daehyeon Bae, <strong>Sujin Park</strong>, Minsig Choi, Young-Giu Jung, Changmin Jeong,
+            HeeSeok Kim, and Seokhie Hong<br />
+            <em>ACM Asia Conference on Computer and Communications Security (ASIACCS)</em>, 2025.
+            [<a href="https://doi.org/10.1145/3708821.3710815" target="_blank" rel="noopener noreferrer">DOI</a>]
           </li>
           <li>
-            <time datetime="2024">2024</time>
-            <div>
-              <span class="news-type">Award</span>
-              <p>Received an Excellence Award at the Cryptographic Analysis Contest.</p>
-            </div>
+            <span class="paper-title">REAF: Replacing Exponential Activation Function to Prevent Side-Channel Analysis</span><br />
+            Joonsup Kim, Dongjun Park, GyuSang Kim, <strong>Sujin Park</strong>, Daehyeon Bae,
+            HeeSeok Kim, and Seokhie Hong<br />
+            <em>International Conference on Information Security and Cryptology (ICISC)</em>, 2024.
+            [<a href="https://doi.org/10.1007/978-981-96-5566-3_14" target="_blank" rel="noopener noreferrer">DOI</a>]
           </li>
         </ol>
-      </div>
-    </section>
 
-    <section class="section tinted-section" id="research" data-section>
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="section-kicker">What I work on</p>
-            <h2>Research interests</h2>
-          </div>
-          <p>
-            Security evaluation and defense at the boundary between physical devices and intelligent systems.
-          </p>
-        </div>
+        <h3>Domestic Journals &amp; Conferences</h3>
+        <ol class="publication-list">
+          <li>
+            <span class="paper-title">A Survey on Power and Electromagnetic Side-Channel Countermeasures for Hardware Inference Engine</span><br />
+            <strong>Sujin Park</strong>, Dongjun Park, GyuSang Kim, Daehyeon Bae, Joonsup Kim,
+            Jeonghwan Lee, Minsig Choi, HeeSeok Kim, and Seokhie Hong<br />
+            <em>KIISC Conference on Information Security and Cryptography (Winter)</em>, 2023.
+          </li>
+          <li>
+            <span class="paper-title">Research of Countermeasure for Deep Learning Network Secret Information Reverse Engineering Against Side-Channel Analysis</span><br />
+            <strong>Sujin Park</strong>, Dongjun Park, Daehyeon Bae, HeeSeok Kim, and Seokhie Hong<br />
+            <em>KIISC Conference on Information Security and Cryptography (Summer)</em>, 2023.
+          </li>
+          <li>
+            <span class="paper-title">Reverse Engineering of Deep Learning Network Secret Information Through Side-Channel Attack</span><br />
+            <strong>Sujin Park</strong>, Juheon Lee, and HeeSeok Kim<br />
+            <em>Journal of the Korea Institute of Information Security &amp; Cryptology</em>, 2022.
+            [<a href="https://doi.org/10.13089/JKIISC.2022.32.5.855" target="_blank" rel="noopener noreferrer">DOI</a>]
+          </li>
+        </ol>
+      </section>
 
-        <div class="research-grid">
-          <article class="research-card">
-            <div class="research-number">01</div>
-            <div class="research-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48">
-                <path d="M6 27h7l4-12 7 24 6-19 4 7h8" />
-              </svg>
-            </div>
-            <h3>Physical Side-Channel Analysis</h3>
-            <p>Power and electromagnetic leakage analysis for embedded and multicore systems.</p>
-          </article>
+      <section id="awards">
+        <h2>Awards and Honors</h2>
+        <ul class="award-list">
+          <li><strong>Excellence Award</strong>, KIISC Conference on Information Security and Cryptography (Winter), 2025.</li>
+          <li><strong>Excellence Award</strong>, The Cryptographic Analysis Contest, 2024.</li>
+          <li><strong>Encouragement Award</strong>, The National Cryptography Contest, 2024.</li>
+          <li><strong>Grand Prize</strong>, The National Cryptography Expert Training Program (NACET-9), 2023.</li>
+          <li><strong>Encouragement Award</strong>, The National Cryptography Contest, 2022.</li>
+          <li><strong>Samsung Master Award</strong>, Workshop on Side Channel Information Analysis, 2020.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
 
-          <article class="research-card">
-            <div class="research-number">02</div>
-            <div class="research-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48">
-                <path d="M24 5 9 11v11c0 10 6.4 17.3 15 21 8.6-3.7 15-11 15-21V11L24 5Z" />
-                <path d="m17 24 5 5 10-11" />
-              </svg>
-            </div>
-            <h3>Side-Channel Countermeasures</h3>
-            <p>Practical defenses for cryptographic implementations and neural-network inference.</p>
-          </article>
-
-          <article class="research-card">
-            <div class="research-number">03</div>
-            <div class="research-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48">
-                <rect x="12" y="12" width="24" height="24" rx="3" />
-                <path d="M18 18h12v12H18zM4 17h8M4 24h8M4 31h8M36 17h8M36 24h8M36 31h8M17 4v8M24 4v8M31 4v8M17 36v8M24 36v8M31 36v8" />
-              </svg>
-            </div>
-            <h3>Secure AI Hardware</h3>
-            <p>Security evaluation and hardening of on-device deep-learning accelerators.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section publications-section" id="publications" data-section>
-      <div class="container">
-        <div class="section-heading publication-heading">
-          <div>
-            <p class="section-kicker">Research output</p>
-            <h2>Publications</h2>
-          </div>
-          <p><strong>Sujin Park</strong> is highlighted in the author lists.</p>
-        </div>
-
-        <div class="publication-group">
-          <div class="publication-group-title">
-            <h3>International</h3>
-            <span>Journals &amp; conferences</span>
-          </div>
-
-          <div class="publication-list">
-            <article class="publication-item">
-              <div class="pub-marker">C3</div>
-              <div class="pub-content">
-                <h4>Exploiting Per-Core Leakage: Electromagnetic Side-Channel Monitoring of Multicore Architectures</h4>
-                <p class="authors">Daehyeon Bae, <strong>Sujin Park</strong>, Insup Lee, Young-Giu Jung, Kyeongsik Lee, HeeSeok Kim, and Seokhie Hong</p>
-                <p class="venue"><span>ACM/IEEE DAC</span> 2026</p>
-              </div>
-            </article>
-
-            <article class="publication-item">
-              <div class="pub-marker">C2</div>
-              <div class="pub-content">
-                <h4>ProbeShooter: A New Practical Approach for Probe Aiming</h4>
-                <p class="authors">Daehyeon Bae, <strong>Sujin Park</strong>, Minsig Choi, Young-Giu Jung, Changmin Jeong, HeeSeok Kim, and Seokhie Hong</p>
-                <div class="pub-meta">
-                  <p class="venue"><span>ACM ASIACCS</span> 2025</p>
-                  <a href="https://doi.org/10.1145/3708821.3710815" target="_blank" rel="noopener noreferrer">DOI <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </article>
-
-            <article class="publication-item">
-              <div class="pub-marker">C1</div>
-              <div class="pub-content">
-                <h4>REAF: Replacing Exponential Activation Function to Prevent Side-Channel Analysis</h4>
-                <p class="authors">Joonsup Kim, Dongjun Park, GyuSang Kim, <strong>Sujin Park</strong>, Daehyeon Bae, HeeSeok Kim, and Seokhie Hong</p>
-                <div class="pub-meta">
-                  <p class="venue"><span>ICISC</span> 2024</p>
-                  <a href="https://doi.org/10.1007/978-981-96-5566-3_14" target="_blank" rel="noopener noreferrer">DOI <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div class="publication-group">
-          <div class="publication-group-title">
-            <h3>Domestic</h3>
-            <span>Journals &amp; conferences</span>
-          </div>
-
-          <div class="publication-list compact-publications">
-            <article class="publication-item">
-              <div class="pub-marker">D3</div>
-              <div class="pub-content">
-                <h4>A Survey on Power and Electromagnetic Side-Channel Countermeasures for Hardware Inference Engine</h4>
-                <p class="authors"><strong>Sujin Park</strong>, Dongjun Park, GyuSang Kim, Daehyeon Bae, Joonsup Kim, Jeonghwan Lee, Minsig Choi, HeeSeok Kim, and Seokhie Hong</p>
-                <p class="venue"><span>CISC-W</span> 2023</p>
-              </div>
-            </article>
-
-            <article class="publication-item">
-              <div class="pub-marker">D2</div>
-              <div class="pub-content">
-                <h4>Research of Countermeasure for Deep Learning Network Secret Information Reverse Engineering Against Side-Channel Analysis</h4>
-                <p class="authors"><strong>Sujin Park</strong>, Dongjun Park, Daehyeon Bae, HeeSeok Kim, and Seokhie Hong</p>
-                <p class="venue"><span>CISC-S</span> 2023</p>
-              </div>
-            </article>
-
-            <article class="publication-item">
-              <div class="pub-marker">J1</div>
-              <div class="pub-content">
-                <h4>Reverse Engineering of Deep Learning Network Secret Information Through Side-Channel Attack</h4>
-                <p class="authors"><strong>Sujin Park</strong>, Juheon Lee, and HeeSeok Kim</p>
-                <div class="pub-meta">
-                  <p class="venue"><span>JKIISC</span> 2022</p>
-                  <a href="https://doi.org/10.13089/JKIISC.2022.32.5.855" target="_blank" rel="noopener noreferrer">DOI <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section tinted-section" id="background" data-section>
-      <div class="container background-grid">
-        <div>
-          <div class="section-heading compact-heading">
-            <div>
-              <p class="section-kicker">Academic journey</p>
-              <h2>Education</h2>
-            </div>
-          </div>
-
-          <div class="timeline">
-            <article class="timeline-item">
-              <div class="timeline-dot" aria-hidden="true"></div>
-              <time>Sep. 2024 — Present</time>
-              <h3>Ph.D. Student in Cybersecurity</h3>
-              <p class="timeline-place">Korea University</p>
-              <p>Advisors: Prof. HeeSeok Kim and Prof. Seokhie Hong</p>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-dot" aria-hidden="true"></div>
-              <time>Mar. 2023 — Aug. 2024</time>
-              <h3>M.S. in Cybersecurity</h3>
-              <p class="timeline-place">Korea University</p>
-              <p class="thesis"><strong>Thesis:</strong> Countermeasures against Side-Channel Analysis in Deep Learning with Single-Precision Floating-Point Arithmetic</p>
-              <p>Advisors: Prof. HeeSeok Kim and Prof. Seokhie Hong</p>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-dot" aria-hidden="true"></div>
-              <time>Mar. 2017 — Feb. 2023</time>
-              <h3>B.S. in AI Cyber Security</h3>
-              <p class="timeline-place">Korea University</p>
-              <p>Advisor: Prof. HeeSeok Kim</p>
-            </article>
-          </div>
-        </div>
-
-        <aside class="experience-panel" aria-labelledby="experience-title">
-          <p class="section-kicker">Beyond the degree</p>
-          <h2 id="experience-title">Experience</h2>
-
-          <article class="experience-card">
-            <span class="experience-year">2021 — 2022</span>
-            <h3>Science Technology Security Centre Intern</h3>
-            <p>Korea Institute of Science and Technology Information (KISTI)</p>
-          </article>
-
-          <article class="experience-card">
-            <span class="experience-year">2023</span>
-            <h3>National Cryptography Expert Training Program</h3>
-            <p>NACET-9 · Grand Prize</p>
-          </article>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section awards-section" id="awards" data-section>
-      <div class="container section-grid">
-        <div class="section-intro">
-          <p class="section-kicker">Recognition</p>
-          <h2>Awards</h2>
-          <p>Selected honors in security research and cryptographic analysis.</p>
-        </div>
-
-        <div class="award-list">
-          <article>
-            <time>2025</time>
-            <div>
-              <h3>Excellence Award</h3>
-              <p>KIISC Conference on Information Security and Cryptography (Winter)</p>
-            </div>
-          </article>
-          <article>
-            <time>2024</time>
-            <div>
-              <h3>Excellence Award</h3>
-              <p>The Cryptographic Analysis Contest</p>
-            </div>
-          </article>
-          <article>
-            <time>2024</time>
-            <div>
-              <h3>Encouragement Award</h3>
-              <p>The National Cryptography Contest</p>
-            </div>
-          </article>
-          <article>
-            <time>2023</time>
-            <div>
-              <h3>Grand Prize</h3>
-              <p>The National Cryptography Expert Training Program (NACET-9)</p>
-            </div>
-          </article>
-          <article>
-            <time>2022</time>
-            <div>
-              <h3>Encouragement Award</h3>
-              <p>The National Cryptography Contest</p>
-            </div>
-          </article>
-          <article>
-            <time>2020</time>
-            <div>
-              <h3>Samsung Master Award</h3>
-              <p>Workshop on Side Channel Information Analysis</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" aria-labelledby="contact-title">
-      <div class="container contact-card">
-        <div>
-          <p class="section-kicker">Get in touch</p>
-          <h2 id="contact-title">Interested in my research?</h2>
-          <p>I am always glad to discuss side-channel analysis, hardware security, and research collaboration.</p>
-        </div>
-        <a class="button contact-button" href="mailto:lemontrees33@korea.ac.kr">
-          lemontrees33@korea.ac.kr <span aria-hidden="true">↗</span>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2026 Sujin Park</p>
-      <p>Last updated: September 2026</p>
-      <a href="#about">Back to top <span aria-hidden="true">↑</span></a>
-    </div>
+  <footer class="footer">
+    <p>© 2026 Sujin Park | Last updated: September 2026</p>
   </footer>
 </body>
 </html>
