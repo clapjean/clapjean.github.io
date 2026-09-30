@@ -126,24 +126,50 @@ a:hover {
 }
 
 .contact {
+  display: grid;
+  gap: 7px;
   padding: 0;
   margin: 15px 0 0;
   list-style: none;
 }
 
 .contact li {
-  margin-bottom: 5px;
+  margin: 0;
 }
 
-.contact a {
+.contact-item {
+  display: flex;
+  align-items: center;
+  min-height: 22px;
+  gap: 9px;
   color: #444444;
   font-size: 14px;
+  line-height: 1.35;
+}
+
+.contact a.contact-item {
   text-decoration: none;
 }
 
-.contact a:hover {
+.contact a.contact-item:hover {
   color: #000000;
   text-decoration: underline;
+}
+
+.contact-icon {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.contact-icon-fill {
+  fill: currentColor;
+  stroke: none;
 }
 
 .content {
@@ -298,9 +324,11 @@ li {
   }
 
   .contact {
-    display: flex;
+    grid-template-columns: repeat(2, max-content);
     justify-content: center;
-    gap: 18px;
+    column-gap: 24px;
+    row-gap: 7px;
+    text-align: left;
   }
 
   .content {
