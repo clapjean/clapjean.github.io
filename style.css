@@ -160,16 +160,31 @@ a:hover {
   width: 17px;
   height: 17px;
   flex: 0 0 17px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  fill: currentColor;
 }
 
-.contact-icon-fill {
-  fill: currentColor;
-  stroke: none;
+.icon-location {
+  color: #e94235;
+}
+
+.icon-email {
+  color: #d93025;
+}
+
+.icon-github {
+  color: #181717;
+}
+
+.icon-scholar {
+  color: #4285f4;
+}
+
+.icon-orcid {
+  color: #a6ce39;
+}
+
+.icon-linkedin {
+  color: #0a66c2;
 }
 
 .content {
